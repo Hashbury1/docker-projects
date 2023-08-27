@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "test-docker",
+			"path": ".."
+		},
+		{
+			"name": "deploy-django-app",
+			"path": "../../../Documents/GitHub/deploy-django-app"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
