@@ -1,0 +1,6 @@
+*myenv
+*.vscode
+*dev-env
+__pycache__
+.DS_Store
+*.sqlite3
