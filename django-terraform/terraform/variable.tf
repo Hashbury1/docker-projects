@@ -49,12 +49,11 @@ variable "log_retention_in_days" {
 
 # key pair
 
-# key pair
-
 variable "ssh_pubkey_file" {
   description = "Path to an SSH public key"
-  default     = "/home/hashbury/.ssh/id_rsa.pub"
+  default     = "~/.ssh/id_rsa.pub"
 }
+
 
 
 
@@ -68,7 +67,7 @@ variable "ecs_cluster_name" {
 variable "amis" {
   description = "Which AMI to spawn."
   default = {
-    us-west-1 = "ami-0bd3976c0dbacc605"
+    us-east-1 = "ami-04cb4ca688797756f"
   }
 }
 variable "instance_type" {
