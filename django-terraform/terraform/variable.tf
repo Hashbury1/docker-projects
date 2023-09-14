@@ -60,3 +60,8 @@ variable "ssh_pubkey_file" {
   description = "Path to an SSH public key"
   default     = "~/.ssh/id_rsa.pub"
 }
+
+
+#!/bin/bash
+
+echo ECS_CLUSTER='production-cluster' > /etc/ecs/ecs.config
