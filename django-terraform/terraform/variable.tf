@@ -64,4 +64,28 @@ variable "ssh_pubkey_file" {
 
 #!/bin/bash
 
-echo ECS_CLUSTER='production-cluster' > /etc/ecs/ecs.config
+echo ECS_CLUSTER="production-cluster" > /etc/ecs/ecs.config
+
+# ecs
+
+variable "ecs_cluster_name" {
+  description = "Name of the ECS cluster"
+  default     = "production"
+}
+variable "amis" {
+  description = "Which AMI to spawn."
+  default = {
+    us-west-1 = "ami-0bd3976c0dbacc605"
+  }
+}
+variable "instance_type" {
+  default = "t2.micro"
+}
+variable "docker_image_url_django" {
+  description = "Docker image to run in the ECS cluster"
+  default     = "<AWS_ACCOUNT_ID>.dkr.ecr.us-west-1.amazonaws.com/django-app:latest"
+}
+variable "app_count" {
+  description = "Number of Docker containers to run"
+  default     = 2
+}
