@@ -47,12 +47,11 @@ variable "log_retention_in_days" {
 }
 
 
-
 # key pair
 
 variable "ssh_pubkey_file" {
-  description = "Path to the SSH public key file"
-  default     = "./id_rsa.pub"
+  description = "Path to an SSH public key"
+  default     = "~/.ssh/id_rsa.pub"
 }
 
 
