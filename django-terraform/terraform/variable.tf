@@ -26,7 +26,7 @@ variable "private_subnet_2_cidr" {
 variable "availability_zones" {
   description = "Availability zones"
   type        = list(string)
-  default     = ["us-west-1b", "us-west-1c"]
+  default     = ["us-east-1b", "us-east-1c"]
 }
 
 
@@ -44,14 +44,6 @@ variable "health_check_path" {
 
 variable "log_retention_in_days" {
   default = 30
-}
-
-
-# key pair
-
-variable "ssh_pubkey_file" {
-  description = "Path to an SSH public key"
-  default     = "~/.ssh/id_rsa.pub"
 }
 
 
