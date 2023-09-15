@@ -1,4 +1,4 @@
 resource "aws_key_pair" "production" {
   key_name   = "nv-django.pem"
-  public_key = "~/.ssh/id_rsa.pub"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCzBn9wsk41E6u44YSsehu0ELeu2RmwJ/bbLZTC1N2FkVYMwhI75b7T2PmjnmY8WODZi21QvzH8/qqLKhCajyUrHeAPe3vAz7PqIP2178pBEOVtCrGMDl6fmm7XkmGcgV1cZ6l0jii/gz4EbJu8c6xSy8wGGxwN3YhXaLEBErOaGfxF2oM7dI/5C1tkQnHhMpUmSO/i1t86jBNvp+qWmvYAffqqgPqEb5i7b/TrtzH5rWeSoCH4VxZZW+jaUD/aRMpLmraZbXVPXsKpUge8VMZIJ6BNIDB6+F7htrHUiRmk2x+A5s7fliPmajHoa408Fu/ogQcVzVK9lM1pQydw2B4d"
 }
