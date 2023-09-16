@@ -7,3 +7,5 @@ __pycache__
 *terraform.lock.hcl
 *.terraform
 *terraform.tfstate
+*env
+*venv
