@@ -25,6 +25,7 @@ data "template_file" "app" {
 resource "aws_ecs_task_definition" "app" {
   family                = "django-app"
   container_definitions = data.template_file.app.rendered
+  depends_on            = [aws_db_instance.production]
 }
 
 resource "aws_ecs_service" "production" {
