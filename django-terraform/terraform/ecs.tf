@@ -19,8 +19,13 @@ data "template_file" "app" {
   vars = {
     docker_image_url_django = var.docker_image_url_django
     region                  = var.region
+    rds_db_name             = var.rds_db_name
+    rds_username            = var.rds_username
+    rds_password            = var.rds_password
+    rds_hostname            = aws_db_instance.production.address
   }
 }
+
 
 resource "aws_ecs_task_definition" "app" {
   family                = "django-app"
